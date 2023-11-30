@@ -6,7 +6,6 @@ import io.zipcoder.currencyconverterapplication.CurrencyType;
 
 public class Euro extends CurrencyAbstract {
     public Euro(){
-        this.name = "EURO";
-        this.currencyType = CurrencyType.getTypeOfCurrency(this);
+        super("EURO");
     }
 }

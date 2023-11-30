@@ -6,7 +6,6 @@ import io.zipcoder.currencyconverterapplication.CurrencyType;
 
 public class SingaporeDollar extends CurrencyAbstract {
     public SingaporeDollar(){
-        this.name = "SINGAPORE_DOLLAR";
-        this.currencyType = CurrencyType.getTypeOfCurrency(this);
+        super("SINGAPORE_DOLLAR");
     }
 }

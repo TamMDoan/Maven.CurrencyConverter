@@ -11,6 +11,13 @@ public abstract class CurrencyAbstract implements ConvertableCurrency {
     protected String name;
     protected CurrencyType currencyType;
 
+    // GET IN KIDS WE CAN ALSO PUT THE CONSTRUCTOR IN HERE!!!
+    // (to cut down on code repetition)
+    public CurrencyAbstract(String name){
+        this.name = name;
+        this.currencyType = CurrencyType.getTypeOfCurrency(this);
+    }
+
     public Double convert(CurrencyType currencyType) {
         return currencyType.getRate() / this.currencyType.getRate();
     }

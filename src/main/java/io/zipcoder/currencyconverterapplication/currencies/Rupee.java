@@ -6,7 +6,6 @@ import io.zipcoder.currencyconverterapplication.CurrencyType;
 
 public class Rupee extends CurrencyAbstract {
     public Rupee(){
-        this.name = "RUPEE";
-        this.currencyType = CurrencyType.getTypeOfCurrency(this);
+        super("RUPEE");
     }
 }

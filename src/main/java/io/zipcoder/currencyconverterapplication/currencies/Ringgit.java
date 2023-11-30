@@ -5,7 +5,6 @@ import io.zipcoder.currencyconverterapplication.CurrencyType;
 
 public class Ringgit extends CurrencyAbstract {
     public Ringgit(){
-        this.name = "RINGGIT";
-        this.currencyType = CurrencyType.getTypeOfCurrency(this);
+        super("RINGGIT");
     }
 }

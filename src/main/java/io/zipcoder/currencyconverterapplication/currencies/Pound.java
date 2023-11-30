@@ -6,7 +6,6 @@ import io.zipcoder.currencyconverterapplication.CurrencyType;
 
 public class Pound extends CurrencyAbstract {
     public Pound(){
-        this.name = "POUND";
-        this.currencyType = CurrencyType.getTypeOfCurrency(this);
+        super("POUND");
     }
 }

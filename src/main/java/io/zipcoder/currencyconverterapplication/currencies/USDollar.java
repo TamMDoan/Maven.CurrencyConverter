@@ -6,7 +6,6 @@ import io.zipcoder.currencyconverterapplication.CurrencyType;
 
 public class USDollar extends CurrencyAbstract {
     public USDollar(){
-        this.name = "US_DOLLAR";
-        this.currencyType = CurrencyType.getTypeOfCurrency(this);
+        super("US_DOLLAR");
     }
 }
